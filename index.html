@@ -34,6 +34,10 @@
   <meta name="twitter:description" property="og:description" content="Personal homepage of Trevor Cunningham, designer and developer." />
   <link href="http://fonts.googleapis.com/css?family=Open+Sans|News+Cycle|Alice|Playfair+Display:900" rel="stylesheet" type="text/css" />
   <link rel="stylesheet" type="text/css" href="css/master.css" media="screen" />
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	  integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+	  crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
 </head>
 
@@ -41,7 +45,7 @@
 <div id="myCard" class="flip-container">
 	<div class="flipper">
 		<div class="front">	
-			<div class="corner" onclick="document.querySelector('#myCard').classList.toggle('hover');" ontouchstart="document.querySelector('#myCard').classList.toggle('hover');"></div>
+			<div class="corner"></div>
 			<div class="bcard">
 				<h1><span>Trevor</span><span>Cunningham</span></h1>
 
@@ -64,7 +68,7 @@
 			<div class="copyright"><p><a href="http://stream.trevorcunningham.com/profile/trevor_c"><i class="fab fa-black-tie"></i> stream.trevorcunningham.com</a></p></div>
 		</div>
 		<div class="back">
-			<div class="corner" onclick="document.querySelector('#myCard').classList.toggle('hover');" ontouchstart="document.querySelector('#myCard').classList.toggle('hover');"></div>
+			<div class="corner"></div>
 			<div class="bcard">
 				<div class="backinfo">
 					<div class="logo"><img src="img/UR_Logo_Secondary_Stacked_Full_Colour_RGB.jpg" alt="University of Regina Logo with Crest" title="University of Regina" /></div>
@@ -85,6 +89,10 @@
 		</div>
 	</div>
 </div>
-
+<script>
+	$('.corner').click(function(){
+	  $('#myCard').toggleClass('hover');
+	});
+</script>
 </body>
 </html>
