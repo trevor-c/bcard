@@ -93,7 +93,7 @@
 <script>
 	$('.corner').click(function(){
 	  $('#myCard').toggleClass('hover');
-    //if (/Mobi|Tablet|iPad|iPhone/.test(navigator.userAgent)) $('.front').toggleClass('hide');
+    if (/Mobi|Tablet|iPad|iPhone/.test(navigator.userAgent)) $('.front').toggleClass('hide');
 	});
 	
 	$(function() {      
@@ -103,7 +103,7 @@
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
         $('#myCard').toggleClass('hover');
 				//Have to toggle the class on iOS otherwise it shows the wrong layer 
-        //if (/Mobi|Tablet|iPad|iPhone/.test(navigator.userAgent)) $('.front').toggleClass('hide');
+        if (/Mobi|Tablet|iPad|iPhone/.test(navigator.userAgent)) $('.front').toggleClass('hide');
 				 
       },
       //Default is 75px, set to 0 for demo so any distance triggers swipe
