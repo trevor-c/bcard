@@ -332,3 +332,7 @@ div.corner:before {
 .back .details a:hover {
 	color: #004f2e;
 	font-weight: bold; }
+
+.hide {
+	display: none;
+}

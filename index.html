@@ -93,6 +93,7 @@
 <script>
 	$('.corner').click(function(){
 	  $('#myCard').toggleClass('hover');
+    $('.front').toggleClass('hide');
 	});
 	
 	$(function() {      
@@ -100,7 +101,9 @@
     $("body").swipe( {
       //Generic swipe handler for all directions
       swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
-        $('#myCard').toggleClass('hover'); 
+        $('#myCard').toggleClass('hover');
+        $('.front').toggleClass('hide');
+				 
       },
       //Default is 75px, set to 0 for demo so any distance triggers swipe
 			threshold:75
