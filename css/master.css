@@ -206,7 +206,8 @@ div.corner:before {
 	border-top: 40px solid #e0e0d1;
 	border-left: 40px solid #e6e6d9;
 	width: 0;
-	animation: fade 3s ease-out 0s; }
+	animation: fade 3s ease-out 0s;
+	cursor: pointer; }
 
 .back div.corner:before {
 	border-left: 40px solid #f5f5f5; }
@@ -221,7 +222,8 @@ div.corner:before {
 	div.corner:before {
 		border-top: 80px solid #e0e0d1;
 		border-left: 80px solid #e6e6d9;
-		animation: fade 3s ease-out 0s; }
+		animation: fade 3s ease-out 0s;
+	  cursor: pointer; }
 		
 	.back div.corner:before {
 	  border-left: 80px solid #f5f5f5; }
