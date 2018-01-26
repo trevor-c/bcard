@@ -334,5 +334,7 @@ div.corner:before {
 	font-weight: bold; }
 
 .hide {
-	display: none;
-}
+	display: none; }
+	
+#myCard.hover .back {
+	z-index: 3; }
